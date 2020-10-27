@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tamma+2&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ad7474103a.js" crossorigin="anonymous"></script>
+	<title>Advanced Form</title>
+	<link rel="stylesheet" href="https://github.com/shaar1/form-projekt.git">
+</head>
+
+<body>
+	<main class="screen">
+		<form class="form" autocomplete="off">
+			<h1 class="main-title">Adoption Form</h1>
+			<h2 class="main-info">Would you like to adopt a cat? Please fill out the form below!</h2>
+
+			<label for="name" class="label">Full name</label>
+			<input type="text" name="name" id="name" class="input-field" placeholder="Enter your name">
+			<label for="email" class="label">Email address</label>
+			<input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required
+				autofocus>
+			<div class="select-wrapper">
+				<label for="select" class="label">What type of cat(s) do you want to adopt?</label>
+				<i class="fas fa-caret-down select__icon"></i>
+				<select name="cats" class="select" id="select">
+					<option value="tabby">Tabby</option>
+					<option value="russian-blue">Russian Blue</option>
+					<option value="norwegian-forest">Norwegian Forest</option>
+					<option value="siamese">Siamese</option>
+					<option value="munchkin">Munchkin</option>
+				</select>
+			</div>
+			<label for="password" class="label">Your password</label>
+			<input type="password" name="password" id="password" class="input-field" placeholder="Enter your password"
+				required minlength="8">
+			<label class="label label--large">
+				<div class="label__text">Your message</div>
+				<textarea name="message" cols="30" rows="4" class="textarea"
+					placeholder="Enter your message"></textarea>
+			</label>
+			<div class="checkbox-container">
+				<label class="checkbox-label">
+					<input type="checkbox" checked>
+					<span class="checkbox-custom rectangular"></span>
+					<div class="input-title">I'd like to receive information about cats on my email!</div>
+				</label>
+
+			</div>
+			<button type="submit" class="button">Submit</button>
+		</form>
+	</main>
+</body>
+
+</html>
